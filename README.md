@@ -40,7 +40,7 @@ spec:
     spec:
       containers:
       - name: testapp-deployment
-        image: henrypham2801/testapp
+        image: henrypham2801/datptdownload
         ports:
         - containerPort: 8080
 ```
