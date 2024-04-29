@@ -91,7 +91,7 @@ spec:
 | GET    | `/api/v1/recurse?n=(int)` | $n\in(1,24)$ | MEM | Tính toán với `n` lần đệ quy. |
 | GET    | `/api/v1/randomfile?n=(int)` | $n\in(1,10000)$ | STO_IO | Đọc và gửi trả lại nội dung trong `n` file text kích cỡ 1KB. |
 | GET    | `/api/v1/bigfile?n=(int)` | $n\in(1,1000)$ | STO_IO+NET_IO | Đọc và gửi trả lại nội dung trong `n` file text kích cỡ 5MB. |
-| GET    | `/api/v1/compress?n=(int)&t=(int) | $n\in(1,1000), t\in(1,\infty)$ | COMBO | Đọc nội dung trong `n` file text kích cỡ 5MB, nén lại sử dụng thuật toán nén LZMA với `t` luồng và gửi trả lại nội dung nén. |
+| GET    | `/api/v1/compress?n=(int)&t=(int)` | $n\in(1,1000), t\in(1,\infty)$ | COMBO | Đọc nội dung trong `n` file text kích cỡ 5MB, nén lại sử dụng thuật toán nén LZMA với `t` luồng và gửi trả lại nội dung nén. |
 
 # Dựng pod NGINX.
 
