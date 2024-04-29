@@ -53,7 +53,7 @@ Vậy là hoàn thành việc tạo 3 app. Giờ ta có thể forward port ra ng
 
 # Dựng pod backend phiên bản nâng cấp (Author: Thành)
 
-(Trình bày các API và manifest để dựng pod vào đây)
+## Deploy
 
 Deployment: `Simpleapp.yaml`
 ```yaml
@@ -77,6 +77,21 @@ spec:
         ports:
         - containerPort: 8080
 ```
+
+## APIs
+
+Ứng dụng chạy ở cổng `8080`.
+
+Ứng dụng trả response theo định dạng `text/json`.
+
+| Method | Endpoint | Parameters | Resource bond | Description |
+|:-------|:---------|:-----------|:--------------|:------------|
+| GET    | `/api/v1/index` | None | None |Trả về string `Hello world`.|
+| GET    | `/api/v1/pi?n=(int)` | $n\in(1,\infty)$ | CPU | Tính toán số $\pi$ với `n` chữ số sau số thập phân. |
+| GET    | `/api/v1/recurse?n=(int)` | $n\in(1,24)$ | MEM | Tính toán với `n` lần đệ quy. |
+| GET    | `/api/v1/randomfile?n=(int)` | $n\in(1,10000)$ | STO_IO | Đọc và gửi trả lại nội dung trong `n` file text kích cỡ 1KB. |
+| GET    | `/api/v1/bigfile?n=(int)` | $n\in(1,1000)$ | STO_IO+NET_IO | Đọc và gửi trả lại nội dung trong `n` file text kích cỡ 5MB. |
+| GET    | `/api/v1/compress?n=(int)&t=(int) | $n\in(1,1000), t\in(1,\infty)$ | COMBO | Đọc nội dung trong `n` file text kích cỡ 5MB, nén lại sử dụng thuật toán nén LZMA với `t` luồng và gửi trả lại nội dung nén. |
 
 # Dựng pod NGINX.
 
