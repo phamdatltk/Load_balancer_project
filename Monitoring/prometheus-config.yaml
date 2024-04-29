@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: prometheus-config
+  namespace: monitoring
+data:
+  prometheus.yml: |
+    global:
+      scrape_interval: 15s
+    scrape_configs:
+      - job_name: 'telegraf-pod1'
+        static_configs:
+          - targets: ['10.233.112.16:9126']
+      - job_name: 'telegraf-pod2'
+        static_configs:
+          - targets: ['10.233.112.15:9126']
+      - job_name: 'telegraf-pod3'
+        static_configs:
+          - targets: ['10.233.112.14:9126']
+      - job_name: 'telegraf-pod4'
+        static_configs:
+          - targets: ['10.233.112.13:9126']
