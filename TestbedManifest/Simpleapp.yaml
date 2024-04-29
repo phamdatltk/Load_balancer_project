@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simpleapp-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: simpleapp-deployment
+  template:
+    metadata:
+      labels:
+        app: simpleapp-deployment
+    spec:
+      containers:
+      - name: simpleapp-deployment
+        image: jerapiblannett/loadbalancer-app-709c7
+        ports:
+        - containerPort: 8080

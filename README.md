@@ -23,7 +23,7 @@ và đóng lên docker hub để có thể tạo được pod
 ## Dựng pod từ app
 Pod được dựng từ file deployment sau:
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -55,10 +55,33 @@ Vậy là hoàn thành việc tạo 3 app. Giờ ta có thể forward port ra ng
 
 (Trình bày các API và manifest để dựng pod vào đây)
 
+Deployment: `Simpleapp.yaml`
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simpleapp-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: simpleapp-deployment
+  template:
+    metadata:
+      labels:
+        app: simpleapp-deployment
+    spec:
+      containers:
+      - name: simpleapp-deployment
+        image: jerapiblannett/loadbalancer-app-709c7
+        ports:
+        - containerPort: 8080
+```
+
 # Dựng pod NGINX.
 
 Sau khi có 3 pod backend, ta tiến hành dựng pod NGINX bằng deployment sau:
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
