@@ -2,7 +2,7 @@
 
 ![alt text](image.png)
 
-# Dựng pod backend
+# Dựng pod backend đơn giản
 ## Viết app đơn giản
 Viết ứng dụng đơn giản bằng java thông ra một api để có thể get được bằng postman
 
@@ -50,6 +50,10 @@ Sau đó chạy lệnh:
 `kubectl apply -f <tên_file>  -n <tên_namespace>`
 
 Vậy là hoàn thành việc tạo 3 app. Giờ ta có thể forward port ra ngoài để xem app có chạy ngon không và test lại
+
+# Dựng pod backend phiên bản nâng cấp (Author: Thành)
+
+(Trình bày các API và manifest để dựng pod vào đây)
 
 # Dựng pod NGINX.
 
