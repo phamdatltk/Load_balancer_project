@@ -14,7 +14,7 @@ Viết ứng dụng đơn giản bằng java thông ra một api để có thể
 
 `/welcome`: “Hello world!”
 
-`/downloaded`: File text 1Mb
+`/download`: File text 1Mb
 
 Tiếp theo ta build image với tên là: henrypham2801/datptdownload
 
