@@ -1,0 +1,103 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: simpleapp-nginx-config-j12t
+  namespace: j12t
+data:
+  j12t.conf: |
+    upstream backend {
+      least_conn;
+      server simpleapp-0.simpleapp-server.j12t.svc.cluster.local:8888;
+      server simpleapp-1.simpleapp-server.j12t.svc.cluster.local:8888;
+      # server simpleapp-2.simpleapp-server.j12t.svc.cluster.local:8888;
+    }
+    server {
+      listen 80;
+      location / {
+          # proxy_set_header X-Real-IP $remote_addr;
+          # proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+          # proxy_set_header Host $http_host;
+          #tell Nginx to distribute the load
+          proxy_pass http://backend/;
+          # proxy_http_version 1.1;
+          # proxy_set_header Upgrade $http_upgrade;
+          # proxy_set_header Connection "upgrade";
+          proxy_read_timeout 1800;
+          proxy_connect_timeout 1800;
+          proxy_send_timeout 1800;
+          send_timeout 1800;
+        }
+    }
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: simpleapp-nginx
+  namespace: j12t
+  labels:
+    app: simpleapp-nginx
+spec:
+  type: NodePort
+  selector:
+    app: simpleapp-nginx
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      name: nginx
+    - port: 9126
+      name: telegraf
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: simpleapp-nginx
+  namespace: j12t
+spec:
+  selector:
+    matchLabels:
+      app: simpleapp-nginx # has to match .spec.template.metadata.labels
+  serviceName: simpleapp-nginx # has to match headless Service metadata.name
+  replicas: 1 # by default is 1
+  template:
+    metadata:
+      labels:
+        app: simpleapp-nginx # has to match .spec.selector.matchLabels
+    spec:
+      terminationGracePeriodSeconds: 10
+      volumes:
+        - name: simpleapp-nginx-config-j12t
+          configMap:
+            name: simpleapp-nginx-config-j12t
+            defaultMode: 420
+        - name: ephemeral
+          emptyDir:
+            sizeLimit: "100M"
+        - name: telegraf-pods-config-j12t
+          configMap:
+            name: telegraf-pods-config-j12t
+            defaultMode: 420
+      containers:
+      - name: simpleapp-nginx
+        image: nginx:latest
+        volumeMounts:
+          - name: simpleapp-nginx-config-j12t
+            mountPath: /etc/nginx/conf.d
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+      - name: telegraf-agent
+        image: telegraf:1.20
+        ports:
+        - containerPort: 9126
+        resources:
+          requests:
+            ephemeral-storage: "50M"
+          limits:
+            ephemeral-storage: "100M"
+        volumeMounts:
+        - name: ephemeral
+          mountPath: "/tmp"
+        - name: telegraf-pods-config-j12t
+          mountPath: "/etc/telegraf"
