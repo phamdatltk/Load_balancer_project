@@ -155,3 +155,5 @@ Các files manifest được đặt tại `TestbedManifest/j12t`
 2. Deploy `Default-NGINX` (NGINX nguyên gốc): `kubectl apply -f default_nginx.yaml`
 3. Deploy `Prometheus+Grafana`: `kubectl apply -f monitoring.yaml`
 4. Deploy `Modified-NGINX` (NGINX đã chỉnh sửa để áp dụng các thuật toán): `kubectl apply -f modified_nginx.yaml`
+
+Test
