@@ -145,3 +145,15 @@ data:
     }
 ```
 `Lưu ý`: Thay config vào trong config map cho phù hợp, sau đó apply là được
+
+## Dựng testbed
+
+Các files manifest được đặt tại `TestbedManifest/j12t`
+
+0. Tạo các namespace: `j12t`, `j12t-monitoring`, `j12t-test`
+1. Deploy `SimpleApp`: `kubectl apply -f simpleapp.yaml`
+2. Deploy `Default-NGINX` (NGINX nguyên gốc): `kubectl apply -f default_nginx.yaml`
+3. Deploy `Prometheus+Grafana`: `kubectl apply -f monitoring.yaml`
+4. Deploy `Modified-NGINX` (NGINX đã chỉnh sửa để áp dụng các thuật toán): `kubectl apply -f modified_nginx.yaml`
+
+Test

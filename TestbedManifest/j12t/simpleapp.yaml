@@ -1,0 +1,102 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: telegraf-pods-config-j12t
+  namespace: j12t
+data:
+  telegraf.conf: |
+    [agent]
+      interval = "10s"
+      round_interval = true
+      metric_batch_size = 1000
+      metric_buffer_limit = 10000
+      collection_jitter = "0s"
+      flush_interval = "10s"
+      flush_jitter = "0s"
+      precision = ""
+      hostname = ""
+      omit_hostname = true
+      logtarget = "file"
+      logfile = "/tmp/telegraf.log"
+    [[outputs.prometheus_client]]
+      listen = ":9126"
+      path = "/metrics"
+    [[outputs.file]]
+      files = ["/tmp/telegraf_stats.txt"]
+      data_format = "wavefront"
+      rotation_max_size = "5MB"
+    [[inputs.mem]]
+    [[inputs.cpu]]
+    [[inputs.net]]
+    [[inputs.diskio]]
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: simpleapp-server
+  labels:
+    app: simpleapp-server
+  namespace: j12t
+spec:
+  ports:
+  - port: 8888
+    name: simpleapp
+  - port: 9126
+    name: telegraf
+  clusterIP: None
+  selector:
+    app: simpleapp-server
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: simpleapp
+  namespace: j12t
+spec:
+  selector:
+    matchLabels:
+      app: simpleapp-server # has to match .spec.template.metadata.labels
+  serviceName: simpleapp-server # has to match headless Service metadata.name
+  replicas: 3 # by default is 1
+  template:
+    metadata:
+      labels:
+        app: simpleapp-server # has to match .spec.selector.matchLabels
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: simpleapp-server
+        image: jerapiblannett/loadbalancer-app-709c7:plain
+        ports:
+        - containerPort: 8888
+        resources:
+          requests:
+            ephemeral-storage: "1G"
+          limits:
+            ephemeral-storage: "1G"
+        volumeMounts:
+        - name: ephemeral
+          mountPath: "/tmp"
+        imagePullPolicy: Always
+      - name: telegraf-agent
+        image: telegraf:1.20
+        ports:
+        - containerPort: 9126
+        resources:
+          requests:
+            ephemeral-storage: "50M"
+          limits:
+            ephemeral-storage: "100M"
+        volumeMounts:
+        - name: ephemeral
+          mountPath: "/tmp"
+        - name: telegraf-pods-config-j12t
+          mountPath: "/etc/telegraf"
+      volumes:
+      - name: ephemeral
+        emptyDir:
+          sizeLimit: "2G"
+      - name: telegraf-pods-config-j12t
+        configMap:
+          name: telegraf-pods-config-j12t
+          defaultMode: 420
