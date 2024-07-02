@@ -5,7 +5,7 @@ import subprocess
 
 PROMETHEUS_URL = "http://prometheus-the-collector-svc.duchm-monitoring.svc.cluster.local:9090"
 
-last_server = None  # Variable to store the last known server with lowest ram Usage Idle
+last_server = None  # Variable to store the last known server with lowest CPU Usage Idle
 
 def query_prometheus(query):
     url = f"{PROMETHEUS_URL}/api/v1/query"
@@ -19,20 +19,20 @@ def query_prometheus(query):
     except requests.exceptions.RequestException as e:
         raise Exception(f"Query failed: {e}")
 
-def find_server_with_lowest_ram_idle(instances):
-    min_ram_idle = float('inf')  # Start with a very large number
-    instance_with_min_mem_idle = None
+def find_server_with_lowest_cpu_idle(instances):
+    min_cpu_idle = float('inf')  # Start with a very large number
+    instance_with_min_cpu_idle = None
     
     for instance in instances:
-        ram_idle = float(instance['value'][1])  # Convert ram Usage Idle to float
-        if ram_idle < min_ram_idle:
-            min_ram_idle = ram_idle
-            instance_with_min_mem_idle = instance
+        cpu_idle = float(instance['value'][1])  # Convert CPU Usage Idle to float
+        if cpu_idle < min_cpu_idle:
+            min_cpu_idle = cpu_idle
+            instance_with_min_cpu_idle = instance
     
-    if instance_with_min_mem_idle:
-        return instance_with_min_mem_idle['metric']['instance'], min_ram_idle
+    if instance_with_min_cpu_idle:
+        return instance_with_min_cpu_idle['metric']['instance'], min_cpu_idle
     else:
-        raise Exception("No valid instance found with ram Usage Idle.")
+        raise Exception("No valid instance found with CPU Usage Idle.")
 
 def generate_nginx_config(server):
     global last_server  # Declare last_server as global here
@@ -83,21 +83,21 @@ def restart_nginx():
 def main():
     try:
         while True:
-            # Example query to get Ram Usage Idle for all servers
-            query = 'mem_available'
+            # Example query to get CPU Usage Idle for all servers
+            query = 'cpu_usage_idle'
             
             # Query Prometheus
             result = query_prometheus(query)
             
             instances = result['data']['result']
             
-            # Find server with lowest ram Usage Idle
-            server, mem_used = find_server_with_lowest_ram_idle(instances)
+            # Find server with lowest CPU Usage Idle
+            server, cpu_idle = find_server_with_lowest_cpu_idle(instances)
             
             # Generate nginx configuration file if server has changed
             generate_nginx_config(server)
             
-            print(f"Request will be proxied to server {server} with lowest Ram Usage Idle: {mem_used}")
+            print(f"Request will be proxied to server {server} with lowest CPU Usage Idle: {cpu_idle}")
             
             # Sleep for 5 seconds before querying Prometheus again
             time.sleep(5)
