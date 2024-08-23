@@ -1,5 +1,8 @@
 # Load balancer project
 
+## Đường dẫn báo cáo hàng tuần
+https://drive.google.com/drive/folders/1f5jJhD2cjQhInBj-8sxMd62XWsat4NZ1d
+
 ## Mục đích
 Mục đích cuối cùng của project là triển khai một thuật toán loadbalancer mới
 
