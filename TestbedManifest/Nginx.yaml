@@ -33,14 +33,14 @@ metadata:
 data:
   datpt.conf: |
     upstream backend {
-      server 10.233.102.205:8080;
-      server 10.233.102.210:8080;
-      server 10.233.102.212:8080;
+      server 10.244.86.165:8080;
+      server 10.244.230.81:8080;
+      server 10.244.118.120:8080;
     }
     server {
       listen 8081;
       server_name localhost;
       location / {
-        proxy_pass http://backend/download;
+        proxy_pass http://backend/;
       }
     }

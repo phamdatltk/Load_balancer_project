@@ -1,86 +1,34 @@
 # Load balancer project
 
+## Mục đích
+Mục đích cuối cùng của project là triển khai một thuật toán loadbalancer mới
+
+## Ý tưởng
+Thuật toán sẽ đươc sử dụng trong loadbalancer, sau đó lấy metric từ các server, sau đó chọn server để forward request
+
+## Các bước thực hiện
+- Xây dựng mô hình để test
+- Xây dựng thuật toán
+- So sánh tính ưu việt của thuật toán so với các thuật toán đã có
+
+## Sơ lược mô hình để test
+Mô hình test được mô tả trong hình sau:
+
 ![alt text](image.png)
 
-# Dựng pod backend đơn giản
-## Viết app đơn giản
-Viết ứng dụng đơn giản bằng java thông ra một api để có thể get được bằng postman
+Giải thích mô hình:
 
-Ứng dụng được viết tương tự như video sau: 
+- `Jmeter`: Bắn request
+- `LB`: Forward request (Nơi cài thuật toán)
+- `App`: Nơi xử lý request
+- `Monitoring`: Một nơi theo dõi được số liệu các server
+### Jmeter
+Là tool để mô phỏng client bắn request liên tục (Cài trên laptop cá nhân)
 
-`How to Create Spring Boot Project in IntelliJ | Community FREE Edition`
-
-Ứng dụng này sẽ chạy ở cổng 8080 và khi gửi request đến API :
-
-`/welcome`: “Hello world!”
-
-`/download`: File text 1Mb
-
-Tiếp theo ta build image với tên là: henrypham2801/datptdownload
-
-và đóng lên docker hub để có thể tạo được pod
-
-## Dựng pod từ app
-Pod được dựng từ file deployment sau:
-
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: testapp-deployment
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: testapp-deployment
-  template:
-    metadata:
-      labels:
-        app: testapp-deployment
-    spec:
-      containers:
-      - name: testapp-deployment
-        image: henrypham2801/datptdownload
-        ports:
-        - containerPort: 8080
-```
-
-Sau đó chạy lệnh: 
-
-`kubectl apply -f <tên_file>  -n <tên_namespace>`
-
-Vậy là hoàn thành việc tạo 3 app. Giờ ta có thể forward port ra ngoài để xem app có chạy ngon không và test lại
-
-# Dựng pod backend phiên bản nâng cấp (Author: Thành)
-
-## Deploy
-
-Deployment: `Simpleapp.yaml`
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: simpleapp-deployment
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: simpleapp-deployment
-  template:
-    metadata:
-      labels:
-        app: simpleapp-deployment
-    spec:
-      containers:
-      - name: simpleapp-deployment
-        image: jerapiblannett/loadbalancer-app-709c7
-        ports:
-        - containerPort: 8080
-```
-
-## APIs
-
-Ứng dụng chạy ở cổng `8080`.
+### LB
+LB sử dụng Nginx, thuật toán mới sử dụng python, ý tưởng là sẽ dùng code để kiểm tra liên tục xem server nào còn thừa nhiều tài nguyên nhất, sau khi kiểm tra xong thì tạo 1 file config Nginx mới, sau đó ghi đè và reload lại config của Nginx là xong 
+### App
+App chạy ở cổng `8080`.
 
 Ứng dụng trả response theo định dạng `text/json`.
 
@@ -93,67 +41,49 @@ spec:
 | GET    | `/api/v1/bigfile?n=(int)` | $n\in(1,1000)$ | STO_IO+NET_IO | Đọc và gửi trả lại nội dung trong `n` file text kích cỡ 5MB. |
 | GET    | `/api/v1/compress?n=(int)&t=(int)` | $n\in(1,1000), t\in(1,\infty)$ | COMBO | Đọc nội dung trong `n` file text kích cỡ 5MB, nén lại sử dụng thuật toán nén LZMA với `t` luồng và gửi trả lại nội dung nén. |
 
-# Dựng pod NGINX.
+### Monitoring
+Testbed được thực hiện trên K8S, nên ta sẽ lấy metric từ K8S bằng helm của prometheus
 
-Sau khi có 3 pod backend, ta tiến hành dựng pod NGINX bằng deployment sau:
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: nginx-deployment
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: nginx-deployment
-  template:
-    metadata:
-      labels:
-        app: nginx-deployment
-    spec:
-      containers:
-      - name: nginx-deployment
-        image: nginx
-        ports:
-        - containerPort: 80
-        - containerPort: 8081
-        volumeMounts:
-        - name: nginx-config
-          mountPath: /etc/nginx/conf.d
-      volumes:
-      - name: nginx-config
-        configMap:
-          name: nginx-config
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: nginx-config
-data:
-  datpt.conf: |
-    upstream backend {
-      server 10.233.102.205:8080;
-      server 10.233.102.210:8080;
-      server 10.233.102.212:8080;
-    }
-    server {
-      listen 8081;
-      server_name localhost;
-      location / {
-        proxy_pass http://backend/download;
-      }
-    }
+## Xây dựng testbed
+
+### Setup Jmeter
+Tải jmeter cho Ubuntu bằng hướng dẫn sau:
+
+https://linux.how2shout.com/2-ways-to-install-apache-jmeter-on-ubuntu-22-04-lts-linux/
+
+
+### Cài đặt 3 pod backend và loadbalancer
+
+Chạy câu lệnh sau:
 ```
-`Lưu ý`: Thay config vào trong config map cho phù hợp, sau đó apply là được
+kubectl apply -f TestbedManifest/
+```
 
-## Dựng testbed
+Câu lệnh trên sẽ cài đặt 3 pod backend và 2 loadbalancer, 1 loadbalancer được cài RoundRobin Nginx, cái còn lại thì là NGINX trống để có thể thực hiện thuật toán mới
+
+Do NGINX để thực hiện thuật toán đang trống, ta cần cài các câu lệnh sau để NGINX có thể chạy được python
+```
+```
+File python dùng để chạy nằm trong file `Algorithm-OFFICIAL.py`
+
+### Cài đặt monitoring cho cụm (Chỉ cần setup 1 lần cho cụm)
+Chạy các câu lệnh sau để cài helm prometheus:
+```
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo update
+helm install prometheus prometheus-community/kube-prometheus-stack
+```
+
+Để truy cập grafana của helm trên, sử dụng mật khẩu là `prom-operator`
+
+<!-- ## Dựng testbed
 
 Các files manifest được đặt tại `TestbedManifest/j12t`
 
-0. Tạo các namespace: `j12t`, `j12t-monitoring`, `j12t-test`
-1. Deploy `SimpleApp`: `kubectl apply -f simpleapp.yaml`
-2. Deploy `Default-NGINX` (NGINX nguyên gốc): `kubectl apply -f default_nginx.yaml`
-3. Deploy `Prometheus+Grafana`: `kubectl apply -f monitoring.yaml`
-4. Deploy `Modified-NGINX` (NGINX đã chỉnh sửa để áp dụng các thuật toán): `kubectl apply -f modified_nginx.yaml`
+1. Tạo các namespace: `j12t`, `j12t-monitoring`, `j12t-test`
+2. Deploy `SimpleApp`: `kubectl apply -f simpleapp.yaml`
+3. Deploy `Default-NGINX` (NGINX nguyên gốc): `kubectl apply -f default_nginx.yaml`
+4. Deploy `Prometheus+Grafana`: `kubectl apply -f monitoring.yaml`
+5. Deploy `Modified-NGINX` (NGINX đã chỉnh sửa để áp dụng các thuật toán): `kubectl apply -f modified_nginx.yaml` -->
 
-Test
+
