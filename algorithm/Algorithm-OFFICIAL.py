@@ -28,9 +28,9 @@ def create_config_file(prometheus_server, path):
 
     config_content = f"""
 upstream backend {{
-   server 10.244.86.165:8080 weight={weight0};
-   server 10.244.230.81:8080 weight={weight1};
-   server 10.244.118.120:8080 weight={weight2};
+   server simpleapp-set1-service weight={weight0};
+   server simpleapp-set2-service weight={weight1};
+   server simpleapp-set3-service weight={weight2};
 }}
 server {{
     listen 8081;

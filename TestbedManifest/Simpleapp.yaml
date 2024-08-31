@@ -82,3 +82,48 @@ spec:
           limits:
             memory: "4Gi"
             cpu: "2"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: simpleapp-set1-service
+  labels:
+    app: simpleapp-set1
+spec:
+  selector:
+    app: simpleapp-set1
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+  type: ClusterIP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: simpleapp-set2-service
+  labels:
+    app: simpleapp-set2
+spec:
+  selector:
+    app: simpleapp-set2
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+  type: ClusterIP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: simpleapp-set3-service
+  labels:
+    app: simpleapp-set3
+spec:
+  selector:
+    app: simpleapp-set3
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+  type: ClusterIP

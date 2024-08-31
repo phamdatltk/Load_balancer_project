@@ -54,6 +54,16 @@ Tải jmeter cho Ubuntu bằng hướng dẫn sau:
 
 https://linux.how2shout.com/2-ways-to-install-apache-jmeter-on-ubuntu-22-04-lts-linux/
 
+### Cài đặt monitoring cho cụm (Chỉ cần setup 1 lần cho cụm)
+Chạy các câu lệnh sau để cài helm prometheus:
+```
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo update
+helm install prometheus prometheus-community/kube-prometheus-stack
+```
+
+Để truy cập grafana của helm trên, sử dụng mật khẩu là `prom-operator`
+
 
 ### Cài đặt 3 pod backend và loadbalancer
 
@@ -66,18 +76,28 @@ Câu lệnh trên sẽ cài đặt 3 pod backend và 2 loadbalancer, 1 loadbalan
 
 Do NGINX để thực hiện thuật toán đang trống, ta cần cài các câu lệnh sau để NGINX có thể chạy được python
 ```
+apt update
+mkdir newAlgorithm
+cd newAlgorithm
+apt install -y python3 python3-pip python3.11-venv nano vim
+python3 -m venv venv
+source venv/bin/activate
+pip3 install requests
+```
+Sau đó, ta copy file python để chạy thuật toán mới vào 1 file trong thư mục newAlgorithm
+```
+nano Algorithm-OFFICIAL.py
 ```
 File python dùng để chạy nằm trong file `Algorithm-OFFICIAL.py`
-
-### Cài đặt monitoring cho cụm (Chỉ cần setup 1 lần cho cụm)
-Chạy các câu lệnh sau để cài helm prometheus:
+Chạy file bằng câu lệnh:
 ```
-helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-helm repo update
-helm install prometheus prometheus-community/kube-prometheus-stack
+python3 Algorithm-OFFICIAL.py 10.244.230.130:9090
 ```
 
-Để truy cập grafana của helm trên, sử dụng mật khẩu là `prom-operator`
+Với `10.244.230.130:9090` là endpoint của prometheus-server
+
+Sau đó, để nguyên cho pod nó chạy python, vậy là đã setup xong
+
 
 <!-- ## Dựng testbed
 
