@@ -91,10 +91,10 @@ nano Algorithm-OFFICIAL.py
 File python dùng để chạy nằm trong file `Algorithm-OFFICIAL.py`
 Chạy file bằng câu lệnh:
 ```
-python3 Algorithm-OFFICIAL.py 10.244.230.130:9090
+python3 Algorithm-OFFICIAL.py prometheus-kube-prometheus-prometheus:9090
 ```
 
-Với `10.244.230.130:9090` là endpoint của prometheus-server
+Với `prometheus-kube-prometheus-prometheus:9090` là endpoint của prometheus-server
 
 Sau đó, để nguyên cho pod nó chạy python, vậy là đã setup xong
 
