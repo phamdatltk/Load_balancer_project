@@ -13,6 +13,8 @@ def get_weights(prometheus_server, pod_name):
         if results:
             value = results[0]['value'][1]
             weight = int(float(value) * 100 )
+            if weight < 0:
+                weight = 1
             return weight
         else:
             print("Không có kết quả nào từ Prometheus.")
