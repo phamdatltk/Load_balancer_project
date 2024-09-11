@@ -13,7 +13,7 @@ def get_weights(prometheus_server, pod_name):
         if results:
             value = results[0]['value'][1]
             weight = int(float(value) * 100 )
-            if weight < 0:
+            if weight <= 0:
                 weight = 1
             return weight
         else:
@@ -25,8 +25,11 @@ def get_weights(prometheus_server, pod_name):
 
 def create_config_file(prometheus_server, path):
     weight0 = get_weights(prometheus_server, "simpleapp-set1-0")
+    print("Weight 0: " + str(weight0))
     weight1 = get_weights(prometheus_server, "simpleapp-set2-0")
+    print("Weight 1: " + str(weight0))
     weight2 = get_weights(prometheus_server, "simpleapp-set3-0")
+    print("Weight 2: " + str(weight0))
 
     config_content = f"""
 upstream backend {{
