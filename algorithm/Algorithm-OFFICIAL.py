@@ -27,9 +27,9 @@ def create_config_file(prometheus_server, path):
     weight0 = get_weights(prometheus_server, "simpleapp-set1-0")
     print("Weight 0: " + str(weight0))
     weight1 = get_weights(prometheus_server, "simpleapp-set2-0")
-    print("Weight 1: " + str(weight0))
+    print("Weight 1: " + str(weight1))
     weight2 = get_weights(prometheus_server, "simpleapp-set3-0")
-    print("Weight 2: " + str(weight0))
+    print("Weight 2: " + str(weight2))
 
     config_content = f"""
 upstream backend {{
