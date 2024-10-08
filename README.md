@@ -7,7 +7,7 @@ https://drive.google.com/drive/folders/1f5jJhD2cjQhInBj-8sxMd62XWsat4NZ1d
 Mục đích cuối cùng của project là triển khai một thuật toán loadbalancer mới
 
 ## Ý tưởng
-Thuật toán sẽ đươc sử dụng trong loadbalancer, sau đó lấy metric từ các server, sau đó chọn server để forward request
+Thuật toán sẽ đươc sử dụng trong loadbalancer, sau đó lấy metric từ các server, sau đó chọn server để forward request với giải thuật là đánh trọng số các server dựa trên lượng tài nguyên còn trống của nó
 
 ## Các bước thực hiện
 - Xây dựng mô hình để test
@@ -27,7 +27,6 @@ Giải thích mô hình:
 - `Monitoring`: Một nơi theo dõi được số liệu các server
 ### Jmeter
 Là tool để mô phỏng client bắn request liên tục (Cài trên laptop cá nhân)
-
 ### LB
 LB sử dụng Nginx, thuật toán mới sử dụng python, ý tưởng là sẽ dùng code để kiểm tra liên tục xem server nào còn thừa nhiều tài nguyên nhất, sau khi kiểm tra xong thì tạo 1 file config Nginx mới, sau đó ghi đè và reload lại config của Nginx là xong 
 ### App
