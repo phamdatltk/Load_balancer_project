@@ -3,6 +3,13 @@ import argparse
 import subprocess
 import time
 
+# Các bước thực hiện:
+# - B1: Tìm trọng số của từng pod
+# - B2: Đưa trọng số vào trong file config
+# - B3: Reload file config để NGINX nhận config mới
+# - B4: Lặp liên tục các hành động trên
+
+# Hàm này để lấy ra trọng số của từng pod
 def get_weights(prometheus_server, pod_name):
     prometheus_url = f'http://{prometheus_server}/api/v1/query'
     query = f'sum(kube_pod_container_resource_limits{{pod="{pod_name}", resource="cpu"}}) - sum(rate(container_cpu_usage_seconds_total{{pod="{pod_name}"}}[1m]))'
@@ -23,6 +30,7 @@ def get_weights(prometheus_server, pod_name):
         print(f"Lỗi khi truy vấn Prometheus: {response.status_code}")
         return None
 
+# Hàm này để tạo config file cho NGINX, hàm trả True nếu file config hợp lệ, trả ra false nếu file config không hợp lệ
 def create_config_file(prometheus_server, path):
     weight0 = get_weights(prometheus_server, "simpleapp-set1-0")
     print("Weight 0: " + str(weight0))
@@ -53,6 +61,7 @@ server {{
       return True
     return False
 
+# Hàm này để reload config trong NGINX nếu file config hợp lệ (Được kiểm tra bằng biến check)
 def apply_config_file(check):
    if check == True:
       try:
@@ -67,11 +76,14 @@ def apply_config_file(check):
 
 
 def main():
+    # Truyền biến URL khi chạy chương trình
     parser = argparse.ArgumentParser(description='Truy vấn lượng CPU còn có thể sử dụng từ Prometheus.')
     parser.add_argument('prometheus_server', type=str, help='URL của Prometheus server (ví dụ: localhost:9092)')
     args = parser.parse_args()
+    # Tạo vòng lặp để thuật toán hoạt động
     while(True):
       try:
+         # Tạo biến check để kiểm tra file config hợp lệ hay không
          check = create_config_file(prometheus_server=args.prometheus_server, path="/etc/nginx/conf.d/datpt.conf")
          apply_config_file(check=check)
       except Exception as e:
