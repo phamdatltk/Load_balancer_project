@@ -2,6 +2,11 @@ import requests
 import argparse
 import subprocess
 import time
+import logging
+
+# Cấu hình logging
+logging.basicConfig(filename="custom_log.log", level=logging.INFO, 
+                    format="%(asctime)s - %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
 
 # Các bước thực hiện:
 # - B1: Tìm trọng số của từng pod
@@ -9,35 +14,62 @@ import time
 # - B3: Reload file config để NGINX nhận config mới
 # - B4: Lặp liên tục các hành động trên
 
-# Hàm này để lấy ra trọng số của từng pod
-def get_weights(prometheus_server, pod_name):
+# Hàm này để lấy ra trọng số của từng pod, có thêm logic retry
+def get_weights(prometheus_server, pod_name, retries=50, delay=0.5):
     prometheus_url = f'http://{prometheus_server}/api/v1/query'
     query = f'sum(kube_pod_container_resource_limits{{pod="{pod_name}", resource="cpu"}}) - sum(rate(container_cpu_usage_seconds_total{{pod="{pod_name}"}}[1m]))'
-    print(query)
-    response = requests.get(prometheus_url, params={'query': query})
-    if response.status_code == 200:
-        results = response.json()['data']['result']
-        if results:
-            value = results[0]['value'][1]
-            weight = int(float(value) * 100 )
-            if weight <= 0:
-                weight = 1
-            return weight
+    
+    # Lặp retries nếu không trả ra số liệu
+    for attempt in range(retries):
+        log_message = f"Attempt {attempt + 1}: {query}"
+        print(log_message)
+        logging.info(log_message)
+        
+        response = requests.get(prometheus_url, params={'query': query})
+        
+        if response.status_code == 200:
+            results = response.json()['data']['result']
+            if results:
+                value = results[0]['value'][1]
+                weight = int(float(value) * 100)
+                if weight <= 0:
+                    weight = 1
+                return weight
+            else:
+                log_message = "Không có kết quả nào từ Prometheus, thử lại..."
+                print(log_message)
+                logging.info(log_message)
         else:
-            print("Không có kết quả nào từ Prometheus.")
-            return None
-    else:
-        print(f"Lỗi khi truy vấn Prometheus: {response.status_code}")
-        return None
+            log_message = f"Lỗi khi truy vấn Prometheus: {response.status_code}, thử lại..."
+            print(log_message)
+            logging.info(log_message)
+        
+        # Đợi trước khi thử lại
+        time.sleep(delay)
+    
+    # Nếu sau retries mà vẫn không thành công
+    log_message = f"Không thể lấy dữ liệu cho pod {pod_name} sau {retries} lần thử."
+    print(log_message)
+    logging.info(log_message)
+    return None
 
 # Hàm này để tạo config file cho NGINX, hàm trả True nếu file config hợp lệ, trả ra false nếu file config không hợp lệ
 def create_config_file(prometheus_server, path):
+    
     weight0 = get_weights(prometheus_server, "simpleapp-set1-0")
-    print("Weight 0: " + str(weight0))
+    log_message = f"Weight 0: {weight0}"
+    print(log_message)
+    logging.info(log_message)
+    
     weight1 = get_weights(prometheus_server, "simpleapp-set2-0")
-    print("Weight 1: " + str(weight1))
+    log_message = f"Weight 1: {weight1}"
+    print(log_message)
+    logging.info(log_message)
+    
     weight2 = get_weights(prometheus_server, "simpleapp-set3-0")
-    print("Weight 2: " + str(weight2))
+    log_message = f"Weight 2: {weight2}"
+    print(log_message)
+    logging.info(log_message)
 
     config_content = f"""
 upstream backend {{
@@ -68,11 +100,14 @@ def apply_config_file(check):
          # Gọi lệnh nginx -s reload để reload cấu hình Nginx
          result = subprocess.run(['nginx', '-s', 'reload'], check=True, capture_output=True, text=True)
          print(f"Config file đã được áp dụng và Nginx đã reload thành công.")
+         logging.info("Config file đã được áp dụng và Nginx đã reload thành công.")
          print(result.stdout)  # In thông tin từ lệnh nginx -s reload (nếu cần)
       except subprocess.CalledProcessError as e:
          print(f"Lỗi khi reload Nginx: {e.stderr}")
+         logging.info(f"Lỗi khi reload Nginx: {e.stderr}")
       except FileNotFoundError:
          print("Lệnh nginx không tìm thấy. Hãy chắc chắn rằng Nginx đã được cài đặt và có sẵn trong PATH.")
+         logging.info("Lệnh nginx không tìm thấy. Hãy chắc chắn rằng Nginx đã được cài đặt và có sẵn trong PATH.")
 
 
 def main():
