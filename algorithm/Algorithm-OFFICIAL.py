@@ -123,6 +123,7 @@ def main():
          apply_config_file(check=check)
       except Exception as e:
          print(e)
+         logging.error("Error: " + str(e))
          time.sleep(1)
          continue
       time.sleep(2)
