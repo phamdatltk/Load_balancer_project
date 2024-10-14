@@ -1,0 +1,767 @@
+2024-10-14 14:42:25 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:25 - Weight 0: 4
+2024-10-14 14:42:25 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:42:25 - Weight 1: 8
+2024-10-14 14:42:25 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:42:25 - Weight 2: 19
+2024-10-14 14:42:25 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:42:27 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:27 - Weight 0: 4
+2024-10-14 14:42:27 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:42:27 - Weight 1: 8
+2024-10-14 14:42:27 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:42:27 - Weight 2: 19
+2024-10-14 14:42:27 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:42:29 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:29 - Weight 0: 4
+2024-10-14 14:42:29 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:42:29 - Weight 1: 8
+2024-10-14 14:42:29 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:42:29 - Weight 2: 19
+2024-10-14 14:42:29 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:42:31 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:31 - Weight 0: 4
+2024-10-14 14:42:31 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:42:31 - Weight 1: 9
+2024-10-14 14:42:31 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:42:31 - Weight 2: 19
+2024-10-14 14:42:31 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:42:33 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:33 - Weight 0: 4
+2024-10-14 14:42:33 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:42:33 - Weight 1: 9
+2024-10-14 14:42:33 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:42:33 - Weight 2: 19
+2024-10-14 14:42:33 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:42:35 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:35 - Weight 0: 4
+2024-10-14 14:42:35 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:42:35 - Weight 1: 9
+2024-10-14 14:42:35 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:42:35 - Weight 2: 19
+2024-10-14 14:42:35 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:42:37 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:37 - Weight 0: 4
+2024-10-14 14:42:37 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:42:37 - Weight 1: 9
+2024-10-14 14:42:37 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:42:37 - Weight 2: 19
+2024-10-14 14:42:37 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:42:39 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:39 - Weight 0: 4
+2024-10-14 14:42:39 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:42:39 - Weight 1: 9
+2024-10-14 14:42:39 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:42:39 - Weight 2: 19
+2024-10-14 14:42:39 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:42:41 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:41 - Weight 0: 4
+2024-10-14 14:42:41 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:42:41 - Weight 1: 9
+2024-10-14 14:42:41 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:42:41 - Weight 2: 19
+2024-10-14 14:42:41 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:42:43 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:43 - Weight 0: 4
+2024-10-14 14:42:43 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:42:43 - Weight 1: 9
+2024-10-14 14:42:43 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:42:43 - Weight 2: 19
+2024-10-14 14:42:43 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:42:45 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:45 - Weight 0: 4
+2024-10-14 14:42:45 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:42:45 - Weight 1: 9
+2024-10-14 14:42:45 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:42:45 - Weight 2: 19
+2024-10-14 14:42:45 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:42:47 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:47 - Weight 0: 4
+2024-10-14 14:42:47 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:42:47 - Weight 1: 9
+2024-10-14 14:42:47 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:42:47 - Weight 2: 19
+2024-10-14 14:42:47 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:42:49 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:49 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:42:50 - Attempt 2: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:50 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:42:50 - Attempt 3: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:50 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:42:51 - Attempt 4: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:51 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:42:51 - Attempt 5: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:51 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:42:52 - Attempt 6: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:52 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:42:52 - Attempt 7: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:52 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:42:53 - Attempt 8: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:53 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:42:53 - Attempt 9: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:53 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:42:54 - Attempt 10: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:54 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:42:54 - Attempt 11: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:54 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:42:55 - Attempt 12: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:55 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:42:55 - Attempt 13: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:55 - Weight 0: 3
+2024-10-14 14:42:55 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:42:55 - Weight 1: 9
+2024-10-14 14:42:55 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:42:55 - Weight 2: 13
+2024-10-14 14:42:55 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:42:57 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:57 - Weight 0: 3
+2024-10-14 14:42:57 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:42:57 - Weight 1: 9
+2024-10-14 14:42:57 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:42:57 - Weight 2: 13
+2024-10-14 14:42:57 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:42:59 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:42:59 - Weight 0: 3
+2024-10-14 14:42:59 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:42:59 - Weight 1: 9
+2024-10-14 14:42:59 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:42:59 - Weight 2: 13
+2024-10-14 14:42:59 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:01 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:01 - Weight 0: 3
+2024-10-14 14:43:01 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:01 - Weight 1: 4
+2024-10-14 14:43:01 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:01 - Weight 2: 13
+2024-10-14 14:43:01 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:03 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:03 - Weight 0: 3
+2024-10-14 14:43:03 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:03 - Weight 1: 4
+2024-10-14 14:43:03 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:03 - Weight 2: 13
+2024-10-14 14:43:03 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:05 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:05 - Weight 0: 3
+2024-10-14 14:43:05 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:05 - Weight 1: 4
+2024-10-14 14:43:05 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:05 - Weight 2: 13
+2024-10-14 14:43:05 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:07 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:07 - Weight 0: 3
+2024-10-14 14:43:07 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:07 - Weight 1: 3
+2024-10-14 14:43:07 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:07 - Weight 2: 13
+2024-10-14 14:43:07 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:09 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:09 - Weight 0: 3
+2024-10-14 14:43:09 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:09 - Weight 1: 4
+2024-10-14 14:43:09 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:09 - Weight 2: 13
+2024-10-14 14:43:09 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:11 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:11 - Weight 0: 3
+2024-10-14 14:43:11 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:11 - Weight 1: 4
+2024-10-14 14:43:11 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:11 - Weight 2: 13
+2024-10-14 14:43:11 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:13 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:13 - Weight 0: 4
+2024-10-14 14:43:13 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:13 - Weight 1: 4
+2024-10-14 14:43:13 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:13 - Weight 2: 13
+2024-10-14 14:43:13 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:15 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:15 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:16 - Attempt 2: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:16 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:16 - Attempt 3: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:16 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:17 - Attempt 4: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:17 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:17 - Attempt 5: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:17 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:18 - Attempt 6: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:18 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:18 - Attempt 7: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:18 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:19 - Attempt 8: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:19 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:19 - Attempt 9: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:19 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:20 - Attempt 10: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:20 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:20 - Attempt 11: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:20 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:21 - Attempt 12: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:21 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:21 - Attempt 13: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:21 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:22 - Attempt 14: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:22 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:22 - Attempt 15: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:22 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:23 - Attempt 16: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:23 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:23 - Attempt 17: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:23 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:24 - Attempt 18: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:24 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:24 - Attempt 19: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:24 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:25 - Attempt 20: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:25 - Weight 0: 1
+2024-10-14 14:43:25 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:25 - Weight 1: 8
+2024-10-14 14:43:25 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:25 - Weight 2: 1
+2024-10-14 14:43:25 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:27 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:27 - Weight 0: 1
+2024-10-14 14:43:27 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:27 - Weight 1: 8
+2024-10-14 14:43:27 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:27 - Weight 2: 1
+2024-10-14 14:43:27 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:29 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:29 - Weight 0: 1
+2024-10-14 14:43:29 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:29 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:30 - Attempt 2: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:30 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:30 - Attempt 3: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:30 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:31 - Attempt 4: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:31 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:31 - Attempt 5: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:31 - Weight 1: 1
+2024-10-14 14:43:31 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:31 - Weight 2: 1
+2024-10-14 14:43:31 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:33 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:33 - Weight 0: 1
+2024-10-14 14:43:33 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:33 - Weight 1: 1
+2024-10-14 14:43:33 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:33 - Weight 2: 1
+2024-10-14 14:43:33 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:35 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:35 - Weight 0: 1
+2024-10-14 14:43:35 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:35 - Weight 1: 1
+2024-10-14 14:43:35 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:35 - Weight 2: 1
+2024-10-14 14:43:35 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:37 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:37 - Weight 0: 1
+2024-10-14 14:43:37 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:37 - Weight 1: 1
+2024-10-14 14:43:37 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:37 - Weight 2: 1
+2024-10-14 14:43:37 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:39 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:39 - Weight 0: 1
+2024-10-14 14:43:39 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:39 - Weight 1: 1
+2024-10-14 14:43:39 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:39 - Weight 2: 1
+2024-10-14 14:43:39 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:41 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:41 - Weight 0: 1
+2024-10-14 14:43:41 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:41 - Weight 1: 1
+2024-10-14 14:43:41 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:41 - Weight 2: 1
+2024-10-14 14:43:41 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:43 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:43 - Weight 0: 1
+2024-10-14 14:43:43 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:43 - Weight 1: 1
+2024-10-14 14:43:43 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:43 - Weight 2: 1
+2024-10-14 14:43:43 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:45 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:45 - Weight 0: 2
+2024-10-14 14:43:45 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:45 - Weight 1: 1
+2024-10-14 14:43:45 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:45 - Weight 2: 1
+2024-10-14 14:43:45 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:47 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:47 - Weight 0: 2
+2024-10-14 14:43:47 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:47 - Weight 1: 1
+2024-10-14 14:43:47 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:47 - Weight 2: 1
+2024-10-14 14:43:47 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:49 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:49 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:50 - Attempt 2: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:50 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:50 - Attempt 3: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:50 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:51 - Attempt 4: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:51 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:51 - Attempt 5: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:51 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:52 - Attempt 6: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:52 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:52 - Attempt 7: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:52 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:53 - Attempt 8: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:53 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:53 - Attempt 9: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:53 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:54 - Attempt 10: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:54 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:54 - Attempt 11: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:54 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:55 - Attempt 12: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:55 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:43:55 - Attempt 13: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:55 - Weight 0: 1
+2024-10-14 14:43:55 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:55 - Weight 1: 1
+2024-10-14 14:43:55 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:55 - Weight 2: 1
+2024-10-14 14:43:55 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:57 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:57 - Weight 0: 1
+2024-10-14 14:43:57 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:57 - Weight 1: 1
+2024-10-14 14:43:57 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:57 - Weight 2: 1
+2024-10-14 14:43:57 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:43:59 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:43:59 - Weight 0: 1
+2024-10-14 14:43:59 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:43:59 - Weight 1: 1
+2024-10-14 14:43:59 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:43:59 - Weight 2: 1
+2024-10-14 14:43:59 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:01 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:01 - Weight 0: 1
+2024-10-14 14:44:01 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:01 - Weight 1: 1
+2024-10-14 14:44:01 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:01 - Weight 2: 1
+2024-10-14 14:44:01 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:03 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:03 - Weight 0: 1
+2024-10-14 14:44:03 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:03 - Weight 1: 1
+2024-10-14 14:44:03 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:03 - Weight 2: 1
+2024-10-14 14:44:03 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:05 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:05 - Weight 0: 1
+2024-10-14 14:44:05 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:05 - Weight 1: 1
+2024-10-14 14:44:05 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:05 - Weight 2: 1
+2024-10-14 14:44:05 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:07 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:07 - Weight 0: 1
+2024-10-14 14:44:07 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:07 - Weight 1: 1
+2024-10-14 14:44:07 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:07 - Weight 2: 1
+2024-10-14 14:44:07 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:09 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:09 - Weight 0: 1
+2024-10-14 14:44:09 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:09 - Weight 1: 1
+2024-10-14 14:44:09 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:09 - Weight 2: 1
+2024-10-14 14:44:09 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:11 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:11 - Weight 0: 1
+2024-10-14 14:44:11 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:11 - Weight 1: 1
+2024-10-14 14:44:11 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:11 - Weight 2: 1
+2024-10-14 14:44:12 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:14 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:14 - Weight 0: 1
+2024-10-14 14:44:14 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:14 - Weight 1: 1
+2024-10-14 14:44:14 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:14 - Weight 2: 10
+2024-10-14 14:44:14 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:16 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:16 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:16 - Attempt 2: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:16 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:17 - Attempt 3: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:17 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:17 - Attempt 4: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:17 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:18 - Attempt 5: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:18 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:18 - Attempt 6: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:18 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:19 - Attempt 7: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:19 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:19 - Attempt 8: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:19 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:20 - Attempt 9: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:20 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:20 - Attempt 10: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:20 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:21 - Attempt 11: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:21 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:21 - Attempt 12: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:21 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:22 - Attempt 13: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:22 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:22 - Attempt 14: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:22 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:23 - Attempt 15: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:23 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:23 - Attempt 16: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:23 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:24 - Attempt 17: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:24 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:24 - Attempt 18: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:24 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:25 - Attempt 19: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:25 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:25 - Attempt 20: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:25 - Weight 0: 1
+2024-10-14 14:44:25 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:25 - Weight 1: 1
+2024-10-14 14:44:25 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:25 - Weight 2: 1
+2024-10-14 14:44:25 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:27 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:27 - Weight 0: 1
+2024-10-14 14:44:27 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:27 - Weight 1: 1
+2024-10-14 14:44:27 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:27 - Weight 2: 1
+2024-10-14 14:44:27 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:29 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:29 - Weight 0: 1
+2024-10-14 14:44:29 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:29 - Weight 1: 1
+2024-10-14 14:44:29 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:29 - Weight 2: 1
+2024-10-14 14:44:29 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:31 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:31 - Weight 0: 1
+2024-10-14 14:44:31 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:31 - Weight 1: 1
+2024-10-14 14:44:31 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:31 - Weight 2: 1
+2024-10-14 14:44:31 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:33 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:33 - Weight 0: 1
+2024-10-14 14:44:33 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:33 - Weight 1: 1
+2024-10-14 14:44:33 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:33 - Weight 2: 1
+2024-10-14 14:44:33 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:35 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:35 - Weight 0: 1
+2024-10-14 14:44:35 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:35 - Weight 1: 1
+2024-10-14 14:44:35 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:35 - Weight 2: 1
+2024-10-14 14:44:35 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:37 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:37 - Weight 0: 1
+2024-10-14 14:44:37 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:37 - Weight 1: 1
+2024-10-14 14:44:37 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:37 - Weight 2: 1
+2024-10-14 14:44:37 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:39 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:39 - Weight 0: 1
+2024-10-14 14:44:39 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:39 - Weight 1: 1
+2024-10-14 14:44:39 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:39 - Weight 2: 1
+2024-10-14 14:44:39 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:41 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:41 - Weight 0: 1
+2024-10-14 14:44:41 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:41 - Weight 1: 1
+2024-10-14 14:44:41 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:41 - Weight 2: 1
+2024-10-14 14:44:41 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:43 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:43 - Weight 0: 1
+2024-10-14 14:44:43 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:43 - Weight 1: 1
+2024-10-14 14:44:43 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:43 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:44 - Attempt 2: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:44 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:44 - Attempt 3: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:44 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:45 - Attempt 4: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:45 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:45 - Attempt 5: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:45 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:46 - Attempt 6: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:46 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:46 - Attempt 7: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:46 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:47 - Attempt 8: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:47 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:47 - Attempt 9: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:47 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:48 - Attempt 10: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:48 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:48 - Attempt 11: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:48 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:49 - Attempt 12: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:49 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:49 - Attempt 13: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:49 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:50 - Attempt 14: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:50 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:50 - Attempt 15: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:50 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:51 - Attempt 16: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:51 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:51 - Attempt 17: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:51 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:52 - Attempt 18: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:52 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:52 - Attempt 19: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:52 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:44:53 - Attempt 20: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:53 - Weight 2: 1
+2024-10-14 14:44:53 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:55 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:55 - Weight 0: 1
+2024-10-14 14:44:55 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:55 - Weight 1: 1
+2024-10-14 14:44:55 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:55 - Weight 2: 1
+2024-10-14 14:44:55 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:57 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:57 - Weight 0: 1
+2024-10-14 14:44:57 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:57 - Weight 1: 1
+2024-10-14 14:44:57 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:57 - Weight 2: 1
+2024-10-14 14:44:57 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:44:59 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:44:59 - Weight 0: 1
+2024-10-14 14:44:59 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:44:59 - Weight 1: 1
+2024-10-14 14:44:59 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:44:59 - Weight 2: 1
+2024-10-14 14:44:59 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:01 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:01 - Weight 0: 1
+2024-10-14 14:45:01 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:01 - Weight 1: 2
+2024-10-14 14:45:01 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:01 - Weight 2: 1
+2024-10-14 14:45:01 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:03 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:03 - Weight 0: 1
+2024-10-14 14:45:03 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:03 - Weight 1: 2
+2024-10-14 14:45:03 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:03 - Weight 2: 1
+2024-10-14 14:45:03 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:05 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:05 - Weight 0: 1
+2024-10-14 14:45:05 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:05 - Weight 1: 1
+2024-10-14 14:45:05 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:05 - Weight 2: 1
+2024-10-14 14:45:05 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:07 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:07 - Weight 0: 1
+2024-10-14 14:45:07 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:07 - Weight 1: 1
+2024-10-14 14:45:07 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:07 - Weight 2: 9
+2024-10-14 14:45:07 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:09 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:09 - Weight 0: 1
+2024-10-14 14:45:09 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:09 - Weight 1: 1
+2024-10-14 14:45:09 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:09 - Weight 2: 9
+2024-10-14 14:45:09 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:11 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:11 - Weight 0: 1
+2024-10-14 14:45:11 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:11 - Weight 1: 1
+2024-10-14 14:45:11 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:11 - Weight 2: 9
+2024-10-14 14:45:11 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:13 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:13 - Weight 0: 1
+2024-10-14 14:45:13 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:13 - Weight 1: 1
+2024-10-14 14:45:13 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:13 - Weight 2: 9
+2024-10-14 14:45:13 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:15 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:15 - Weight 0: 1
+2024-10-14 14:45:15 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:15 - Weight 1: 1
+2024-10-14 14:45:15 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:15 - Weight 2: 9
+2024-10-14 14:45:15 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:17 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:17 - Weight 0: 1
+2024-10-14 14:45:17 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:17 - Weight 1: 1
+2024-10-14 14:45:17 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:17 - Weight 2: 9
+2024-10-14 14:45:17 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:19 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:19 - Weight 0: 1
+2024-10-14 14:45:19 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:19 - Weight 1: 1
+2024-10-14 14:45:19 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:19 - Weight 2: 9
+2024-10-14 14:45:19 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:21 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:21 - Weight 0: 1
+2024-10-14 14:45:21 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:21 - Weight 1: 3
+2024-10-14 14:45:21 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:21 - Weight 2: 12
+2024-10-14 14:45:21 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:23 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:23 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:45:24 - Attempt 2: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:24 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:45:24 - Attempt 3: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:24 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:45:25 - Attempt 4: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:25 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:45:25 - Attempt 5: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:25 - Weight 0: 1
+2024-10-14 14:45:25 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:25 - Weight 1: 3
+2024-10-14 14:45:25 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:25 - Weight 2: 15
+2024-10-14 14:45:25 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:27 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:27 - Weight 0: 1
+2024-10-14 14:45:27 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:27 - Weight 1: 4
+2024-10-14 14:45:27 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:27 - Weight 2: 14
+2024-10-14 14:45:27 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:29 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:29 - Weight 0: 1
+2024-10-14 14:45:29 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:29 - Weight 1: 4
+2024-10-14 14:45:29 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:29 - Weight 2: 15
+2024-10-14 14:45:29 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:31 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:31 - Weight 0: 1
+2024-10-14 14:45:31 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:31 - Weight 1: 4
+2024-10-14 14:45:31 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:31 - Weight 2: 15
+2024-10-14 14:45:31 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:33 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:33 - Weight 0: 1
+2024-10-14 14:45:33 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:33 - Weight 1: 4
+2024-10-14 14:45:33 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:33 - Weight 2: 15
+2024-10-14 14:45:33 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:35 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:35 - Weight 0: 1
+2024-10-14 14:45:35 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:35 - Weight 1: 4
+2024-10-14 14:45:35 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:35 - Weight 2: 15
+2024-10-14 14:45:35 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:37 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:37 - Weight 0: 1
+2024-10-14 14:45:37 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:37 - Weight 1: 4
+2024-10-14 14:45:37 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:37 - Weight 2: 15
+2024-10-14 14:45:37 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:39 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:39 - Weight 0: 1
+2024-10-14 14:45:39 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:39 - Weight 1: 4
+2024-10-14 14:45:39 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:39 - Weight 2: 15
+2024-10-14 14:45:39 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:41 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:41 - Weight 0: 1
+2024-10-14 14:45:41 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:41 - Weight 1: 4
+2024-10-14 14:45:41 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:41 - Weight 2: 18
+2024-10-14 14:45:41 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:43 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:43 - Weight 0: 2
+2024-10-14 14:45:43 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:43 - Weight 1: 4
+2024-10-14 14:45:43 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:43 - Weight 2: 18
+2024-10-14 14:45:43 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:45 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:45 - Weight 0: 2
+2024-10-14 14:45:45 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:45 - Weight 1: 4
+2024-10-14 14:45:45 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:45 - Weight 2: 18
+2024-10-14 14:45:46 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:48 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:48 - Weight 0: 2
+2024-10-14 14:45:48 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:48 - Weight 1: 7
+2024-10-14 14:45:48 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:48 - Weight 2: 18
+2024-10-14 14:45:48 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:50 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:50 - Weight 0: 2
+2024-10-14 14:45:50 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:50 - Weight 1: 7
+2024-10-14 14:45:50 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:50 - Weight 2: 18
+2024-10-14 14:45:50 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:52 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:52 - Weight 0: 3
+2024-10-14 14:45:52 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:52 - Weight 1: 7
+2024-10-14 14:45:52 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:52 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:45:52 - Attempt 2: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:52 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:45:53 - Attempt 3: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:53 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:45:53 - Attempt 4: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-10-14 14:45:53 - Weight 2: 13
+2024-10-14 14:45:53 - Config file đã được áp dụng và Nginx đã reload thành công.
+2024-10-14 14:45:55 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-10-14 14:45:55 - Weight 0: 1
+2024-10-14 14:45:55 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:55 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:45:56 - Attempt 2: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:56 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:45:56 - Attempt 3: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:56 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:45:57 - Attempt 4: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:57 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:45:57 - Attempt 5: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:57 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:45:58 - Attempt 6: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:58 - Không có kết quả nào từ Prometheus, thử lại...
+2024-10-14 14:45:58 - Attempt 7: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-10-14 14:45:58 - Không có kết quả nào từ Prometheus, thử lại...

@@ -31,7 +31,7 @@ def get_weights(prometheus_server, pod_name, retries=50, delay=0.5):
             results = response.json()['data']['result']
             if results:
                 value = results[0]['value'][1]
-                weight = int(float(value) * 100)
+                weight = int(float(value) * 10)
                 if weight <= 0:
                     weight = 1
                 return weight
