@@ -33,7 +33,7 @@ def get_weights(prometheus_server, pod_name, retries=50, delay=0.5):
         if responseCpu.status_code == 200 and responseRam.status_code == 200:
             resultsCpu = responseCpu.json()['data']['result']
             resultsRam = responseRam.json()['data']['result']
-            if resultsCpu != None and responseRam != None :
+            if resultsCpu != [] and resultsRam != [] :
                 valueCpu = resultsCpu[0]['value'][1]
                 weightCpu = int(float(valueCpu) * 10)
                 logging.info("Weight CPU: " + str(weightCpu))
