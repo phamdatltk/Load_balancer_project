@@ -17,21 +17,30 @@ logging.basicConfig(filename="custom_log.log", level=logging.INFO,
 # Hàm này để lấy ra trọng số của từng pod, có thêm logic retry
 def get_weights(prometheus_server, pod_name, retries=50, delay=0.5):
     prometheus_url = f'http://{prometheus_server}/api/v1/query'
-    query = f'sum(kube_pod_container_resource_limits{{pod="{pod_name}", resource="cpu"}}) - sum(rate(container_cpu_usage_seconds_total{{pod="{pod_name}"}}[1m]))'
+    queryCpu = f'sum(kube_pod_container_resource_limits{{pod="{pod_name}", resource="cpu"}}) - sum(rate(container_cpu_usage_seconds_total{{pod="{pod_name}"}}[1m]))'
+    queryRam = f'sum(kube_pod_container_resource_limits{{pod="{pod_name}", resource="memory"}}) - sum(container_memory_usage_bytes{{pod="{pod_name}"}})'
     
     # Lặp retries nếu không trả ra số liệu
     for attempt in range(retries):
-        log_message = f"Attempt {attempt + 1}: {query}"
-        print(log_message)
-        logging.info(log_message)
+        log_message_cpu = f"Attempt {attempt + 1}: {queryCpu}"
+        log_message_ram = f"Attempt {attempt + 1}: {queryRam}"
+        logging.info(log_message_cpu)
+        logging.info(log_message_ram)
         
-        response = requests.get(prometheus_url, params={'query': query})
+        responseCpu = requests.get(prometheus_url, params={'query': queryCpu})
+        responseRam = requests.get(prometheus_url, params={'query': queryRam})
         
-        if response.status_code == 200:
-            results = response.json()['data']['result']
-            if results:
-                value = results[0]['value'][1]
-                weight = int(float(value) * 10)
+        if responseCpu.status_code == 200 and responseRam.status_code == 200:
+            resultsCpu = responseCpu.json()['data']['result']
+            resultsRam = responseRam.json()['data']['result']
+            if resultsCpu != None and responseRam != None :
+                valueCpu = resultsCpu[0]['value'][1]
+                weightCpu = int(float(valueCpu) * 10)
+                logging.info("Weight CPU: " + str(weightCpu))
+                valueRam = resultsRam[0]['value'][1]
+                weightRam = int(float(valueRam)/1024/1024/204.8)
+                logging.info("Weight RAM: " + str(weightRam))
+                weight = weightCpu + weightRam
                 if weight <= 0:
                     weight = 1
                 return weight
@@ -40,7 +49,8 @@ def get_weights(prometheus_server, pod_name, retries=50, delay=0.5):
                 print(log_message)
                 logging.info(log_message)
         else:
-            log_message = f"Lỗi khi truy vấn Prometheus: {response.status_code}, thử lại..."
+            log_message = f"Lỗi khi truy vấn Prometheus CPU: {responseCpu.status_code}, thử lại..."
+            log_message = f"Lỗi khi truy vấn Prometheus RAM: {responseRam.status_code}, thử lại..."
             print(log_message)
             logging.info(log_message)
         

@@ -1,0 +1,149 @@
+2024-11-05 21:48:28 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:48:28 - Error: HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /localhost:42649//api/v1/query?queryCpu=sum%28kube_pod_container_resource_limits%7Bpod%3D%22simpleapp-set1-0%22%2C+resource%3D%22cpu%22%7D%29+-+sum%28rate%28container_cpu_usage_seconds_total%7Bpod%3D%22simpleapp-set1-0%22%7D%5B1m%5D%29%29 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x744292bdac20>: Failed to resolve 'http' ([Errno -3] Temporary failure in name resolution)"))
+2024-11-05 21:48:29 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:48:29 - Error: HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /localhost:42649//api/v1/query?queryCpu=sum%28kube_pod_container_resource_limits%7Bpod%3D%22simpleapp-set1-0%22%2C+resource%3D%22cpu%22%7D%29+-+sum%28rate%28container_cpu_usage_seconds_total%7Bpod%3D%22simpleapp-set1-0%22%7D%5B1m%5D%29%29 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x744292bdb5b0>: Failed to resolve 'http' ([Errno -3] Temporary failure in name resolution)"))
+2024-11-05 21:48:30 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:48:30 - Error: HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /localhost:42649//api/v1/query?queryCpu=sum%28kube_pod_container_resource_limits%7Bpod%3D%22simpleapp-set1-0%22%2C+resource%3D%22cpu%22%7D%29+-+sum%28rate%28container_cpu_usage_seconds_total%7Bpod%3D%22simpleapp-set1-0%22%7D%5B1m%5D%29%29 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x744292bd9c60>: Failed to resolve 'http' ([Errno -3] Temporary failure in name resolution)"))
+2024-11-05 21:48:31 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:48:31 - Error: HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /localhost:42649//api/v1/query?queryCpu=sum%28kube_pod_container_resource_limits%7Bpod%3D%22simpleapp-set1-0%22%2C+resource%3D%22cpu%22%7D%29+-+sum%28rate%28container_cpu_usage_seconds_total%7Bpod%3D%22simpleapp-set1-0%22%7D%5B1m%5D%29%29 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x744292bdbe80>: Failed to resolve 'http' ([Errno -3] Temporary failure in name resolution)"))
+2024-11-05 21:48:54 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:48:54 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:48:55 - Attempt 2: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:48:55 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:48:56 - Attempt 3: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:48:56 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:48:56 - Attempt 4: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:48:57 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:48:57 - Attempt 5: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:48:57 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:48:58 - Attempt 6: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:48:58 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:48:59 - Attempt 7: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:48:59 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:48:59 - Attempt 8: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:49:00 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:50:57 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:50:57 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:50:58 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:50:58 - Attempt 2: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:50:58 - Attempt 2: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:50:58 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:50:59 - Attempt 3: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:50:59 - Attempt 3: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:50:59 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:51:00 - Attempt 4: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:51:00 - Attempt 4: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:51:00 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:51:00 - Attempt 5: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:51:00 - Attempt 5: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:51:01 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:51:01 - Attempt 6: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:51:01 - Attempt 6: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:51:01 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:51:02 - Attempt 7: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:51:02 - Attempt 7: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:51:02 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:51:03 - Attempt 8: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:51:03 - Attempt 8: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:51:03 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:51:03 - Attempt 9: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:51:03 - Attempt 9: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:51:04 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:51:04 - Attempt 10: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:51:04 - Attempt 10: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:51:04 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:51:05 - Attempt 11: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:51:05 - Attempt 11: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:51:05 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:51:06 - Attempt 12: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:51:06 - Attempt 12: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:51:06 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:51:06 - Attempt 13: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:51:06 - Attempt 13: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:51:07 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:51:07 - Attempt 14: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:51:07 - Attempt 14: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:51:07 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:53:35 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:53:35 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:53:35 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:53:36 - Attempt 2: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:53:36 - Attempt 2: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:53:36 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:53:36 - Attempt 3: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:53:36 - Attempt 3: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:53:37 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 21:53:37 - Attempt 4: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 21:53:37 - Attempt 4: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 21:53:37 - Lỗi khi truy vấn Prometheus RAM: 400, thử lại...
+2024-11-05 22:15:09 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 22:15:09 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 22:15:10 - Weight CPU: 4
+2024-11-05 22:15:10 - Weight RAM: 4
+2024-11-05 22:15:10 - Weight 0: 8
+2024-11-05 22:15:10 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-11-05 22:15:10 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set2-0"})
+2024-11-05 22:15:10 - Weight CPU: 9
+2024-11-05 22:15:10 - Weight RAM: 9
+2024-11-05 22:15:10 - Weight 1: 18
+2024-11-05 22:15:10 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-11-05 22:15:10 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set3-0"})
+2024-11-05 22:15:10 - Weight CPU: 19
+2024-11-05 22:15:10 - Weight RAM: 19
+2024-11-05 22:15:10 - Weight 2: 38
+2024-11-05 22:15:10 - Error: [Errno 2] No such file or directory: '/etc/nginx/conf.d/datpt.conf'
+2024-11-05 22:15:11 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 22:15:11 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 22:15:12 - Weight CPU: 4
+2024-11-05 22:15:12 - Weight RAM: 4
+2024-11-05 22:15:12 - Weight 0: 8
+2024-11-05 22:15:12 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-11-05 22:15:12 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set2-0"})
+2024-11-05 22:15:12 - Weight CPU: 9
+2024-11-05 22:15:12 - Weight RAM: 9
+2024-11-05 22:15:12 - Weight 1: 18
+2024-11-05 22:15:12 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-11-05 22:15:12 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set3-0"})
+2024-11-05 22:15:12 - Weight CPU: 19
+2024-11-05 22:15:12 - Weight RAM: 19
+2024-11-05 22:15:12 - Weight 2: 38
+2024-11-05 22:15:12 - Error: [Errno 2] No such file or directory: '/etc/nginx/conf.d/datpt.conf'
+2024-11-05 22:15:13 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 22:15:13 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 22:15:14 - Weight CPU: 4
+2024-11-05 22:15:14 - Weight RAM: 4
+2024-11-05 22:15:14 - Weight 0: 8
+2024-11-05 22:15:14 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-11-05 22:15:14 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set2-0"})
+2024-11-05 22:15:14 - Weight CPU: 9
+2024-11-05 22:15:14 - Weight RAM: 9
+2024-11-05 22:15:14 - Weight 1: 18
+2024-11-05 22:15:14 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-11-05 22:15:14 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set3-0"})
+2024-11-05 22:15:14 - Weight CPU: 19
+2024-11-05 22:15:14 - Weight RAM: 19
+2024-11-05 22:15:14 - Weight 2: 38
+2024-11-05 22:15:14 - Error: [Errno 2] No such file or directory: '/etc/nginx/conf.d/datpt.conf'
+2024-11-05 22:15:15 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 22:15:15 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 22:15:15 - Weight CPU: 4
+2024-11-05 22:15:15 - Weight RAM: 4
+2024-11-05 22:15:15 - Weight 0: 8
+2024-11-05 22:15:15 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-11-05 22:15:15 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set2-0"})
+2024-11-05 22:15:16 - Weight CPU: 9
+2024-11-05 22:15:16 - Weight RAM: 9
+2024-11-05 22:15:16 - Weight 1: 18
+2024-11-05 22:15:16 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set3-0"}[1m]))
+2024-11-05 22:15:16 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set3-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set3-0"})
+2024-11-05 22:15:16 - Weight CPU: 19
+2024-11-05 22:15:16 - Weight RAM: 19
+2024-11-05 22:15:16 - Weight 2: 38
+2024-11-05 22:15:16 - Error: [Errno 2] No such file or directory: '/etc/nginx/conf.d/datpt.conf'
+2024-11-05 22:15:17 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set1-0"}[1m]))
+2024-11-05 22:15:17 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set1-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set1-0"})
+2024-11-05 22:15:17 - Weight CPU: 4
+2024-11-05 22:15:17 - Weight RAM: 4
+2024-11-05 22:15:17 - Weight 0: 8
+2024-11-05 22:15:17 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="cpu"}) - sum(rate(container_cpu_usage_seconds_total{pod="simpleapp-set2-0"}[1m]))
+2024-11-05 22:15:17 - Attempt 1: sum(kube_pod_container_resource_limits{pod="simpleapp-set2-0", resource="memory"}) - sum(container_memory_usage_bytes{pod="simpleapp-set2-0"})
