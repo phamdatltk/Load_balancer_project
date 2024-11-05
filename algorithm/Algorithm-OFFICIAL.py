@@ -17,7 +17,7 @@ logging.basicConfig(filename="custom_log.log", level=logging.INFO,
 # Hàm này để lấy ra trọng số của từng pod, có thêm logic retry
 def get_weights(prometheus_server, pod_name, retries=50, delay=0.5):
     prometheus_url = f'http://{prometheus_server}/api/v1/query'
-    queryCpu = f'sum(kube_pod_container_resource_limits{{pod="{pod_name}", resource="cpu"}}) - sum(rate(container_cpu_usage_seconds_total{{pod="{pod_name}"}}[1m]))'
+    queryCpu = f'sum(kube_pod_container_resource_limits{{pod="{pod_name}", resource="cpu"}}) - sum(rate(container_cpu_usage_seconds_total{{pod="{pod_name}"}}[1m10s]))'
     queryRam = f'sum(kube_pod_container_resource_limits{{pod="{pod_name}", resource="memory"}}) - sum(container_memory_usage_bytes{{pod="{pod_name}"}})'
     
     # Lặp retries nếu không trả ra số liệu
