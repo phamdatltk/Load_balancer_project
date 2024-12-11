@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: simpleapp-set1
+spec:
+  serviceName: "simpleapp-set1"
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simpleapp-set1
+  template:
+    metadata:
+      labels:
+        app: simpleapp-set1
+    spec:
+      containers:
+      - name: simpleapp-container
+        image: jerapiblannett/loadbalancersimpleappcsharp:latest
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "1"
+          limits:
+            memory: "8Gi"
+            cpu: "1"
